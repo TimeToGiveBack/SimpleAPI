@@ -12,7 +12,7 @@ namespace SimpleAPI.Test
         public void GetReturnsMyName()
         {
             var returnValue = controller.Get(1);
-            Assert.Equal("Dave Shepherd", returnValue.Value);
+            Assert.Equal("Dave Shepherd aaa", returnValue.Value);
         }
         
         [Fact]
