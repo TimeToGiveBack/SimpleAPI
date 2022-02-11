@@ -29,7 +29,7 @@ namespace SimpleAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "Dave Shepherd";
+            return "Correct Response";
         }
 
         // POST api/values
