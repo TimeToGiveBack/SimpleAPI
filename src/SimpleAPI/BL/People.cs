@@ -2,7 +2,7 @@ using System;
 using SimpleAPI;
 using System.Collections.Generic;
 
-namespace SimpleAPI.People
+namespace SimpleAPI
 {
     public class People
     {

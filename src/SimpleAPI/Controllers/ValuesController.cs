@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SimpleAPI;
 
 namespace SimpleAPI.Controllers
 {
@@ -11,10 +12,18 @@ namespace SimpleAPI.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values
+        //[HttpGet]
+        //public ActionResult<IEnumerable<string>> Get()
+        //{
+        //    return new string[] { "dotnet", "yes please work now" };
+        //}
+        
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Person>> Get()
         {
-            return new string[] { "dotnet", "yes please work now" };
+            People people = new People();
+            var peopleListing = people.GetMockList();
+            return peopleListing;
         }
 
         // GET api/values/5
