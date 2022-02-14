@@ -11,13 +11,6 @@ namespace SimpleAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
-        //[HttpGet]
-        //public ActionResult<IEnumerable<string>> Get()
-        //{
-        //    return new string[] { "dotnet", "yes please work now" };
-        //}
-        
         [HttpGet]
         public ActionResult<IEnumerable<Person>> Get()
         {
